@@ -1,5 +1,5 @@
 #!/bin/bash
 
-gdc log.d -o log-gdc
+gdc -O3 -frelease -march=native log.d -o log-gdc
 
 ./log-gdc

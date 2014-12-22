@@ -1,5 +1,5 @@
 #!/bin/bash
 
-ldc log.d
+ldc -O3 -release -mcpu=native -singleobj log.d
 
 ./log
