@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gdc log.d -o log-gdc
+
+./log-gdc

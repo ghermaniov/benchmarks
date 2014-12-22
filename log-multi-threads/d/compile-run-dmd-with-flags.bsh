@@ -1,0 +1,5 @@
+#!/bin/bash
+
+dmd -O -release -inline -noboundscheck log.d 
+
+./log
