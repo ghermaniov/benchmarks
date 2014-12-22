@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gcc -lm log.c -o log
+
+./log

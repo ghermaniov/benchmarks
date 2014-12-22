@@ -1,0 +1,6 @@
+#!/bin/bash
+
+javac Log.java
+
+# Need to give enough memory to JVM to store the big array
+java -Xmx12g -Xms3g Log 
