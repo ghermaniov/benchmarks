@@ -7,9 +7,10 @@ public class Log {
 
      public static void main(String[] args) {
 
+		long ts = System.currentTimeMillis();
+		
         double[] logs = new double[1000000000];
-
-        long ts = System.currentTimeMillis();
+        
         for (int i = 0; i < logs.length; i++) {
             logs[i] = Math.log(i + 1);
         }

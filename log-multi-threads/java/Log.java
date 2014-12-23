@@ -7,12 +7,13 @@ public class Log {
 
 
     public static void main(String[] args) {
+        long ts = System.currentTimeMillis();
+        
         CountDownLatch latch = new CountDownLatch(1000000000 / 200);
         ExecutorService pool = Executors.newFixedThreadPool(8);
         
         double[] logs = new double[1000000000];
-
-        long ts = System.currentTimeMillis();
+        
         for (int i = 0; i < logs.length; i += 200) {
             pool.execute(new LogCalc(logs, i, latch));
         }
